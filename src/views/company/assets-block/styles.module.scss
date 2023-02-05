@@ -1,0 +1,44 @@
+@import 'styles/variables.scss';
+
+.assets {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url('/images/company-page/assets-block/bg.png');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  overflow: hidden;
+}
+
+.assetsInner {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  row-gap: 40px;
+}
+
+.percentList {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.assetsDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+@media only screen and (max-width: $tab) {
+  .assetsInner {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

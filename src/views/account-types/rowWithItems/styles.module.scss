@@ -1,0 +1,63 @@
+@import 'styles/variables.scss';
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0 40px;
+
+  li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 10px;
+
+    h2 {
+      font-weight: 900;
+    }
+
+    p {
+      padding-bottom: 30px;
+    }
+  }
+
+  [class~='gold'] {
+    background: $goldGradient;
+  }
+
+  [class~='platinum'] {
+    background: $platinum;
+  }
+
+  [class~='vip'] {
+    background: $vip;
+    color: $gold;
+  }
+}
+
+.gold {
+  background: $goldGradient;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: $big) {
+  .row {
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}

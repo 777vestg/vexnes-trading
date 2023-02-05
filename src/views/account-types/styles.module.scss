@@ -1,0 +1,33 @@
+@import 'styles/variables.scss';
+
+.table {
+  display: grid;
+  max-width: 100%;
+  gap: 1rem;
+  padding: 60px 0;
+  grid-template-columns: minmax(
+    910px,
+    1fr
+  ); /* two columns with same ratio fraction */
+  overflow: scroll;
+
+  margin-top: 50px;
+  border: 1px solid $grey-light;
+  box-shadow: $shadow;
+  border-radius: 10px;
+  row-gap: 20px;
+}
+
+.table > * {
+  min-width: 0;
+}
+
+.buttonsWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0 40px;
+}

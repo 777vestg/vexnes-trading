@@ -1,0 +1,79 @@
+@import 'styles/variables.scss';
+
+.platformWrap {
+  margin-top: 50px;
+  padding: 100px 0;
+  // background-image: url('/images/main-page/platform-block/mockup-platform-home-bg.png');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+}
+
+.platform {
+  display: flex;
+  // justify-content: flex-end;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.platformTextWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 550px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  row-gap: 50px;
+
+  h2 {
+    color: $white;
+    max-width: 500px;
+
+    span {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 54px;
+    }
+  }
+
+  p {
+    color: $white;
+    text-align: center;
+  }
+}
+
+.platformImage {
+  position: relative;
+  left: 0;
+}
+
+.platformList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  li {
+    display: flex;
+    color: $white;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: $tab) {
+  .platformTextWrap {
+    h2 {
+      font-size: 24px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .platformImage {
+    display: none;
+  }
+}

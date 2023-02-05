@@ -1,0 +1,89 @@
+@import 'styles/variables.scss';
+
+.firstBlockWrap {
+  padding: 400px 0;
+  background-image: url('/images/company-page/first-block/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.firstBlock {
+  h1 {
+    color: $white;
+    max-width: 400px;
+  }
+}
+
+.bannerInfo {
+  display: flex;
+  column-gap: 40px;
+}
+
+.bannerCard {
+  padding: 30px;
+  margin-top: 40px;
+  background-color: $blackTransparent;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  font-weight: 700;
+
+  h3 {
+    color: $white;
+  }
+
+  p {
+    color: $grey;
+  }
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.bannerNote {
+  align-items: flex-end;
+  display: flex;
+  color: $white;
+  text-shadow: -3px -3px 15px $black;
+  font-weight: 900;
+  width: 100%;
+  max-width: 560px;
+}
+
+@media only screen and (max-width: $tab) {
+  .firstBlockWrap {
+    padding-top: 300px;
+    padding-bottom: 150px;
+  }
+
+  .firstBlock {
+    h1 {
+      display: flex;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+  }
+
+  .bannerInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .firstBlock {
+    h1 {
+      display: flex;
+      margin: 0 auto;
+      font-size: 36px;
+    }
+  }
+
+  .bannerNote {
+    font-size: 24px;
+  }
+}

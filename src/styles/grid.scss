@@ -1,0 +1,93 @@
+@import './variables.scss';
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.button-line {
+  border-bottom: 1px solid $grey-light;
+}
+
+/**Bold*/
+.boldText {
+  font-weight: 900;
+}
+
+.super-bold {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/*Shadow*/
+
+.shadow {
+  box-shadow: 0px 0px 0px #ffffff, 0px 0px 20px rgb(0 0 0 / 20%);
+}
+
+/**Flex*/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/**Backgrounds*/
+
+.background-standard-options {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-black {
+  background-color: $black;
+}
+
+/*Text*/
+.goldText {
+  background: $goldGradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Padding*/
+.ptb-250 {
+  padding: 250px 0;
+}
+
+.ptb-100 {
+  padding: 100px 0;
+}
+
+.pt-550 {
+  padding-top: 550px;
+}
+.pt-150 {
+  padding-top: 150px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+/*Max width*/
+.mw-190 {
+  width: 100%;
+  max-width: 190px;
+}
+
+/*Margin*/
+.m-center-top-50 {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.m-center {
+  margin: 0 auto;
+}

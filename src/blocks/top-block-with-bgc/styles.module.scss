@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+.accountTypesPageWrap {
+  background-image: url('/images/account-types-page/bg.jpg');
+  background-position: right 0 bottom 0;
+  // background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $black;
+  h1 {
+    color: $white;
+  }
+      padding: 250px 0 150px;
+}

@@ -1,0 +1,51 @@
+@import 'styles/variables.scss';
+
+.animationCardBlockWrap {
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.animationCardBlockList {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 60px;
+  row-gap: 60px;
+
+  li {
+    padding: 40px;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    row-gap: 30px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .animationCardBlockList {
+    grid-template-columns: 1fr;
+    li {
+      padding: 20px;
+    }
+  }
+}

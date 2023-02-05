@@ -1,0 +1,57 @@
+@import 'styles/variables.scss';
+
+.studyMainWrap {
+  padding: 40px;
+  background-color: $black500;
+}
+
+.studyWrap {
+  background-image: url('/images/main-page/study-block/bg.png');
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px;
+  border-radius: 5%;
+}
+
+.study {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 0;
+  row-gap: 30px;
+
+  h2 {
+    color: $white;
+    max-width: 300px;
+  }
+
+  span {
+    color: gold;
+    font-size: 27px;
+    font-weight: 700;
+  }
+}
+
+.description {
+  color: $white;
+}
+
+@media only screen and (max-width: $tab) {
+  .studyMainWrap {
+    padding: 20px;
+  }
+
+  .studyWrap {
+    padding: 150px 20px;
+    transition: all 0.3s linear;
+  }
+
+  .study {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

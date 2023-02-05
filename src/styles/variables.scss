@@ -1,0 +1,47 @@
+/**Colors**/
+
+/*Black*/
+$black: #000000;
+$blackTransparent: #87838342;
+$black100: #494747;
+$black500: #0e0e0e;
+
+/*White*/
+$white: #ffffff;
+
+/*Gold*/
+$gold: #eac140;
+$goldGradient: -webkit-linear-gradient(#b4842a, #f6ea93);
+$goldGradientBackground: linear-gradient(
+  248.61deg,
+  #f6ea93 4.32%,
+  #c49c3c 26.77%,
+  #f3dda2 47.72%,
+  #eac140 88.64%,
+  #b4842a 95.66%
+);
+
+/*Grey*/
+$grey: #a9a9a9;
+$grey-light: #d4d4d4;
+
+/*Shadow*/
+$shadow: 0px 0px 0px #ffffff, 0px 0px 20px rgb(0 0 0 / 20%);
+
+/*Rose*/
+$lightRose: #f4f1e9;
+$darkRose: #fff1cd;
+
+/**Screen size**/
+$big: '1200px';
+$tab: '860px';
+$medium: '640px';
+$mobile: '560px';
+$small: '360px';
+
+/**Platinum**/
+
+$platinum: #e5e4e2;
+
+/**VIP*/
+$vip: black;

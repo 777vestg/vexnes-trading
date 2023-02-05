@@ -1,0 +1,92 @@
+@import 'styles/variables.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  row-gap: 20px;
+
+  &[class~='container'] {
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+}
+
+.footerBlocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.leftBlock,
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.leftBlockTitle,
+.rightBlockTitle {
+  color: $white;
+  font-weight: 700;
+}
+
+.leftBlockList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  a {
+    color: $white;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+.rightBlock {
+  justify-content: flex-start;
+}
+
+.rightBlockList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  li {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  span {
+    color: $white;
+  }
+}
+
+.rightBlockSubTitle {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.infoBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+@media only screen and (max-width: $tab) {
+  .infoBlock {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .footerBlocks {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,61 @@
+@import 'styles/variables.scss';
+.trustBlockWrap {
+  background-image: url('/images/main-page/assets-block/bg.png');
+}
+
+.trustBlock {
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+  }
+
+  button {
+    max-width: 200px;
+    margin: 30px auto 0;
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 937px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.clientRulesWrap {
+  margin-top: 50px;
+  display: flex;
+  column-gap: 40px;
+}
+
+.clientAllowList,
+.clientNotAllowTList {
+  span {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.trustButton {
+  max-width: 200px;
+  margin: 40px auto 0;
+}
+
+@media only screen and (max-width: $mobile) {
+  .clientRulesWrap {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

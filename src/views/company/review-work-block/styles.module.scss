@@ -1,16 +1,19 @@
-@import 'styles/variables.scss';
+@import "styles/variables.scss";
 
 .reviewWorkWrap {
   margin-top: 50px;
-  background: black url('/images/company-page/review-work-block/platform.png');
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/company-page/review-work-block/platform.png");
   background-position: bottom right -200px;
   background-repeat: no-repeat;
   padding: 10% 20px 50%;
   background-size: contain;
+  background-color: black;
 
   h2 {
     color: $white;
     font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
   }
 }
 

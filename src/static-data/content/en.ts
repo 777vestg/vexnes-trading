@@ -1,4 +1,4 @@
-import { domain, email, fullProjectName, newDomain, phoneNumber, shortProjectName } from "./variables";
+import { domain, email, fullProjectName, phoneNumber, shortProjectName } from "./variables";
 
 const header = {
   menuList: [
@@ -672,8 +672,8 @@ const footer = {
     ],
 
     description: [
-      `The website ${newDomain} is a trademark, this site is the property of V.R.T. GROUP LTD, registration number 110989, Ulitsa Okhotnyy Ryad, 2, Moscow, Russia, 109012.`,
-      `V.R.T. GROUP LTD company and the website ${newDomain} do not render any services to citizens and residents of the United States, Belgium, Turkey, Israel, Syria, Sudan, Iran, North Korea, Japan and other countries and jurisdictions, where these services cannot be provided by virtue of the current legislation.`,
+      `The website ${domain} is a trademark, this site is the property of V.R.T. GROUP LTD, registration number 110989, Ulitsa Okhotnyy Ryad, 2, Moscow, Russia, 109012.`,
+      `V.R.T. GROUP LTD company and the website ${domain} do not render any services to citizens and residents of the United States, Belgium, Turkey, Israel, Syria, Sudan, Iran, North Korea, Japan and other countries and jurisdictions, where these services cannot be provided by virtue of the current legislation.`,
     ],
   },
   payPartners: "/images/footer/payments-footer.png",

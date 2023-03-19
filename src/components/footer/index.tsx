@@ -4,7 +4,6 @@ import content from 'src/static-data/content';
 import styles from './styles.module.scss';
 import Image from 'next/image';
 import classNames from 'classnames';
-import ScrollTopButton from '../scroll-top-button';
 
 const Footer: React.FC = () => {
   const { locale } = useRouter();

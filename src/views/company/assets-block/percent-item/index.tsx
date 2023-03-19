@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import startCounter from 'src/utils/counter/counter';
+import startCounter from 'src/shared/utils/counter/counter';
 import styles from './styles.module.scss';
 
 interface Props {

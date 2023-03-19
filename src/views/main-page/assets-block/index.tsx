@@ -5,8 +5,8 @@ import React from 'react';
 import content from 'src/static-data/content';
 import styles from './styles.module.scss';
 import { motion } from 'framer-motion';
-import startCounter from 'src/utils/counter/counter';
-import UseNumberFormats from 'src/hooks/useNumberFormats';
+import startCounter from 'src/shared/utils/counter/counter';
+import UseNumberFormats from 'src/shared/hooks/useNumberFormats';
 
 const AssetsBlock: React.FC = () => {
   const { locale } = useRouter();

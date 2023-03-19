@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import UseNumberFormats from 'src/hooks/useNumberFormats';
-import startCounter from 'src/utils/counter/counter';
+import UseNumberFormats from 'src/shared/hooks/useNumberFormats';
+import startCounter from 'src/shared/utils/counter/counter';
 
 interface Props {
   myKey: number;

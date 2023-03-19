@@ -1,0 +1,24 @@
+@import "styles/variables.scss";
+
+.wrapper {
+  background: linear-gradient(to top, rgb(0 0 0) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url("/images/payments/notebook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.popup {
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-weight: 600;
+}

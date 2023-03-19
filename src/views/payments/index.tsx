@@ -1,6 +1,4 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import { maxWidth } from "@mui/system";
-import classNames from "classnames";
 import React from "react";
 import { PaymentData } from "src/shared/types";
 import styles from "./styles.module.scss";

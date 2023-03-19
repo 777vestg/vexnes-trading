@@ -16,10 +16,8 @@ const PAYMENT_QUERY = gql`
 
 const TestPage: React.FC = () => {
   const { data, loading, error } = useQuery(PAYMENT_QUERY);
-  console.log("data", data);
   if (data) {
     const payments: PaymentData[] = data.vexness.payments;
-    console.log("data", payments);
     return (
       <div>
         {payments.map((item: PaymentData, index) => (

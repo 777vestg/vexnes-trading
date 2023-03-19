@@ -21,7 +21,6 @@ const PAYMENT_QUERY = gql`
 const Payment: React.FC<Props> = () => {
   const router = useRouter();
   const { pid } = router.query;
-  console.log("pid", pid);
 
   const { data, loading, error } = useQuery(PAYMENT_QUERY, {
     variables: { id: pid },
@@ -29,8 +28,6 @@ const Payment: React.FC<Props> = () => {
   });
   if (data) {
     const payments: PaymentData[] = data.vexness.payments;
-
-    console.log("payments", payments);
 
     return <PaymentsView payments={payments} />;
   }

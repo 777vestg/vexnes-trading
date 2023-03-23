@@ -1,5 +1,5 @@
 export const domain = "vexnes.com";
-export const phoneNumber = "+74951514017";
+export const phoneNumber = "+79680098513";
 export const email = "support@vex-t.com";
 export const fullProjectName = "vExnes";
 export const shortProjectName = "VEX";

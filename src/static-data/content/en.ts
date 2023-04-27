@@ -199,7 +199,7 @@ const accountTypesPage = {
   table: {
     account: {
       items: [
-        { title: "Account Type", color: "gold", subtitle: "Первый депозит" },
+        { title: "Account Type", subtitle: "First deposit" },
         { title: "Standart", subtitle: '<span class="super-bold">$250</span>' },
         {
           title: "Gold",

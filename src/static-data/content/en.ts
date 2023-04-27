@@ -273,7 +273,7 @@ const accountTypesPage = {
         subtitle: "",
       },
     ],
-    creditShoulderTitle: [{ title: "Условия", subtitle: "" }],
+    creditShoulderTitle: [{ title: "conditions", subtitle: "" }],
     creditShoulder: [
       { title: "", subtitle: "Leverage" },
       { title: "", subtitle: "До 1:100" },
